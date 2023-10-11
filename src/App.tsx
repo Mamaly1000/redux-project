@@ -42,7 +42,7 @@ function App() {
         {cake.foods.map((food) => {
           return (
             <div
-              className="flex flex-col items-center justify-between gap-3 min-w-full  md:min-w-[300px] max-w-[300px] min-h-fit md:min-h-[300px] max-h-[300px] rounded-lg drop-shadow-2xl border-[1px] border-violet-800 p-2 "
+              className="flex flex-wrap items-center justify-between gap-3 min-w-full  md:min-w-[300px] max-w-[300px] min-h-fit md:min-h-[300px] max-h-[300px] rounded-lg drop-shadow-2xl border-[1px] border-violet-800 p-2 "
               key={food.id}
             >
               <img
