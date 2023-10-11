@@ -1,4 +1,5 @@
 import { Action } from "redux";
+import { RootState } from "../store/store";
 
 const initailCakeState: {
   cake: number;
@@ -18,3 +19,6 @@ const cakeReducer = (state = initailCakeState, action: Action) => {
   }
 };
 export default cakeReducer;
+export const selectCake = (state: RootState) => {
+  return state.cake;
+};
